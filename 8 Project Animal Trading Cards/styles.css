@@ -1,0 +1,40 @@
+/* add your CSS here */
+body {
+	font-family: Arial;
+}
+
+#card {
+	width: 330px;
+	border: 1px solid #b3b3b3;
+	box-shadow: 10px 10px 5px #d9d9d9;
+}
+
+#info {
+	border: 1px solid #b3b3b3;
+	margin: 15px;
+	padding: 0px 10px;
+	font-size: 15px;
+}
+
+#title {
+	font-size: 25px;
+	margin-left: 15px;
+	line-height: 15px
+}
+
+#image {
+	display: block;
+    margin: 0 auto;
+}
+
+#interestingFact {
+	font-style: italic;
+}
+
+.listLabel {
+	font-weight: bold;
+}
+
+li {
+	list-style-type: none;
+}
