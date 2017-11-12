@@ -3,8 +3,8 @@
 
 // When size is submitted by the user, call makeGrid()
 
-function makeGrid() {
+//no jQuery used!
 
-// Your code goes here!
+//make color picker variable
+let color = document.getElementById("colorPicker").value
 
-}
