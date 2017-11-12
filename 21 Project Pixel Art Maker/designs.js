@@ -29,3 +29,26 @@ document.getElementsByTagName("input")[2].addEventListener("click", function(evt
 	//call grid function
 	makeGrid(inputHeight,inputWidth);
 });
+
+//makeGrid
+function makeGrid(height,width){
+	//delete current table
+	document.getElementById("pixel_canvas").innerHTML = "";
+	//function to create cells to insert
+  	let makingGrid = function(height,width) {
+  		//clear grid
+		let grid = "";
+		//create html tags for grid with given height and width
+		for (let i = 0; i < height; i++) {
+	      grid += "<tr>";
+	      for (let j = 0; j < width; j++) {
+	      	grid += "<td></td>";
+	      }
+	      grid += "</tr>";
+		}
+		return grid;
+	};
+	//make the actual grid by calling makingGrid() function
+  	document.getElementById("pixel_canvas").innerHTML = makingGrid(height,width);
+}
+
