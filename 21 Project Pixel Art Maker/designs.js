@@ -19,3 +19,13 @@ document.getElementById("pixel_canvas").addEventListener("click", function(evt){
 	//change the colour of the cell that was clicked
 	evt.target.style.backgroundColor = color;
 });
+
+//submit button event listener for grid spec
+document.getElementsByTagName("input")[2].addEventListener("click", function(evt){
+	evt.preventDefault(); //preventDefault() to prevent submit button from submitting a form
+	//assign inputed height and width to new variables when clicked
+	let inputHeight = document.getElementById('input_height').value;
+	let inputWidth = document.getElementById('input_width').value;
+	//call grid function
+	makeGrid(inputHeight,inputWidth);
+});
